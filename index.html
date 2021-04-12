@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ex 06 | Autoria Web</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="JS/jquery-min.js"></script>
+  <script type="text/javascript" src="JS/script.js"></script>
+  <script src="JS/FileSaver.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <header id="headerOn" onmouseenter="mlkFino()" onmousemove="mlkFino()" onmouseout="normal()">
+    <p id='name'>Felipe Marques de Stefano</p>
+  </header>
+  <div class="backgroundDiv">
+    <h2>Ex 06 | Autoria Web</h2>
+    <h3>Cadastro de produtos na lista</h3>
+    <form>
+      <div id="divFormLeft">
+        <p>Nome: <br> <input type="text" id="nome" name="nome" placeholder="Exemplo: Feijão" /></p>
+        <p id="erroNome"></p>
+        <p>Quantidade: <br> <input type="text" id="qtd" name="qtd" placeholder="Exemplo: 1" /></p>
+        <p id="erroQtd"></p>
+        <p>Preço(R$): <br> <input type="text" id="preco" name="preco" placeholder="Exemplo: 10.00" /></p>
+        <p id="erroPreco"></p>
+        <p><button type="button" id="inclu" name="inclu" onclick="incluir()">Incluir</button></p>
+        <button type="button" id="atual" name="atual" onclick="atualizar()">Atualizar</button>
+        <button type="button" id="limpar" name="limpar" onclick="limpar()">Limpar</button>
+      </div>
+    </form>
+  </div>
+  <hr />
+  <div class="divUL">
+    <h3>Lista de produtos <span id="qtdLiItem">Quantidade de Itens: 0</span></h3>
+    <ul id="lista">
+
+    </ul>
+  </div>
+  <hr />
+  <footer>
+    <div id="mensagem"></div>
+    <button type="button" id="salvo" onclick="salvar()">Salvar Produtos</button>
+  </footer>
+</body>
+
+</html>
