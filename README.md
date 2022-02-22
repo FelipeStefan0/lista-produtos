@@ -1,5 +1,7 @@
 # Lista de Produtos
 
+## Projeto desenvolvido para atividade avaliativa.
+
 ## Funções:
 
 1. Adiciona produtos a lista de vendas
